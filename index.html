@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Gitviewer by Angular</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+</style>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="animated lightSpeedIn" ng-app="myApp" ng-controller="myCtrl">
+  <div class="fonte">{{message}}</div>
+ <div class="fonte"> {{countdown}} </div>
+  <div class="formkandi">
+  <form name ="searchUser" ng-submit="search(username)">
+    <input type="search" required placeholder="Adit Patil ko dhanyavad bole aur git id type kare" id="search" ng-model="username">
+    <input type="submit" value="Dabao isse" id ="submit" >
+  </div>
+    <div id="Details">
+<div ng-show="user" ng class= "fonte">
+  Name:{{user.name}}
+  </div>
+  <div ng-show="user" class= "fonte">
+    Location:{{user.location}}
+  </div>
+  <div ng-show="user">
+    <img ng-src="{{user.avatar_url}}">
+  </div>
+    <div ng-show="user" class="fonte">
+      <p>{{repoSortOrder}}</p>
+      <p>Order By:</p>
+      <select ng-model="repoSortOrder" style="width: 200px; height:50px">
+        <option value="+name">Name</option>
+        <option value="+stargazers_count">Stars</option>
+        <option value="+language">Language</option>
+      </select>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+           <th>Stars</th>
+           <th>Language</th>
+        </tr>
+      </thead>
+<tbody>
+  <tr ng-repeat="repo in repos |orderBy:repoSortOrder">
+    <td>{{repo.name}}</td>
+    <td>{{repo.stargazers_count}}</td>
+    <td>{{repo.language}}</td>
+  </tr>
+</tbody>
+    </table>
+</div>
+</div>
+  </div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

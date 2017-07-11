@@ -1,0 +1,30 @@
+body{
+  background-image: url("http://goldwallpapers.com/uploads/posts/wallpaper-for-cat/wallpaper_for_cat_014.jpg");
+}
+.fonte{
+  font-size:60px;
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+}
+img{
+width:400px;
+  margin:1px auto;
+  display:block;
+}
+.formkandi{
+  width:500px;
+	margin:0 auto;
+  text-align: center;
+}
+#search{
+  width:690px;
+  padding:18px;
+  border:4px solid #607d8b;
+  font-size:29px;
+}
+#submit{
+  width:110px;
+  padding:18px;
+  font-size:15px;
+  background-color:#e242f4;
+}
