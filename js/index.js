@@ -34,7 +34,7 @@ app.controller('myCtrl', function($scope,$http,$interval,$anchorScroll,$location
   
   
   $scope.username="angular";
-  $scope.message="adi10 ka Gitviewer";
+  $scope.message="adi10's Gitviewer";
   $scope.repoSortOrder="+stargazers_count";
   $scope.countdown=10;
   startCountdown();
