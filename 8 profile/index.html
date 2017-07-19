@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Gitviewer by Angular</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/git.js"></script>
+</head>
+<body>
+<div class="card" style="width: 20rem;" ng-controller="myCtrl">
+  <img ng-src="{{user.avatar_url}}" title="{{user.name}}">
+  <div class="card-block">
+    <h4 class="card-title">Name: {{user.name}}</h4>
+    <p class="card-text">
+    Location : {{user.location}}</p>
+    <a href="#" class="btn btn-primary">Visit Git profile</a>
+  </div>
+</div>
+</body>
+</html>
