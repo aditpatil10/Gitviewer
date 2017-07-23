@@ -1,3 +1,14 @@
+body{
+	padding-top: 50px;
+	width: 100% !important;
+
+}
+
+.row{
+	border: 1px solid black;
+	width: 100% !important;
+}
+
 .space1{
 	float: right;
 
@@ -5,4 +16,12 @@
 .space2{
 	float: left;
 
+}
+
+.card{}
+	
+
+.card-avatar{
+	height: 200px;
+	width: 200px;
 }
