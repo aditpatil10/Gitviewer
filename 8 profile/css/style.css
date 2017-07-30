@@ -1,6 +1,7 @@
 body{
 	padding-top: 50px;
 	width: 100% !important;
+	background-image: url("http://1.bp.blogspot.com/-hQnEs4hMoUA/UTh9_BLL31I/AAAAAAAAAks/2GS-kPeZKXs/s1600/awesome-powerpoint-templates.jpeg")
 
 }
 
@@ -24,4 +25,11 @@ body{
 .card-avatar{
 	height: 200px;
 	width: 200px;
+}
+.title{
+	font-size: 86px;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	margin-bottom: 5%;
 }
